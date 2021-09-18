@@ -443,8 +443,8 @@ void BMP_GetPixelRGB( BMP* bmp, UINT x, UINT y, UCHAR* r, UCHAR* g, UCHAR* b )
 		bytes_per_row = bmp->Header.ImageDataSize / bmp->Header.Height;
 
 		/* Calculate the location of the relevant pixel (rows are flipped) */
-		pixel = bmp->Data + ( ( bmp->Header.Height - y - 1 ) * bytes_per_row + x * bytes_per_pixel );
-
+		/*pixel = bmp->Data + ( ( bmp->Header.Height - y - 1 ) * bytes_per_row + x * bytes_per_pixel );*/
+		pixel = bmp->Data + ( y * bytes_per_row + x * bytes_per_pixel );
 
 		/* In indexed color mode the pixel's value is an index within the palette */
 		if ( bmp->Header.BitsPerPixel == 8 )
