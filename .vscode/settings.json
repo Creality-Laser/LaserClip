@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "stdlib.h": "c",
+        "api.h": "c",
+        "strlist.h": "c",
+        "qdbmp.h": "c"
+    }
+}

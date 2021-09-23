@@ -1,8 +1,11 @@
+#pragma once
 #include "strlist.h"
 
 typedef struct
 {
     unsigned int power_max;
+    unsigned int work_speed;
+    unsigned int jog_speed;
     float density;
     float offset_x;
     float offset_y;

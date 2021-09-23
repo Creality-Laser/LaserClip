@@ -16,9 +16,10 @@
         "-std=c11",
         "-g",
         "${file}",
-        "${fileDirname}\\clip.c",
-        "${fileDirname}\\strlist.c",
-        "${fileDirname}\\qdbmp.c",
+        "${fileDirname}\\core\\clip.c",
+        "${fileDirname}\\core\\strlist.c",
+        "${fileDirname}\\lib\\qdbmp.c",
+        "${fileDirname}\\core\\api.c",
         "-o",
         "${fileDirname}\\${fileBasenameNoExtension}.exe"
       ],

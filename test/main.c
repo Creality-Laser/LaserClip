@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "clip.h"
-#include "strlist.h"
-#include "qdbmp.h"
+#include "core/clip.h"
+#include "core/strlist.h"
+#include "lib/qdbmp.h"
 
 int main()
 {
